@@ -1,0 +1,37 @@
+.PostsListItem {
+    align-content: center;
+    border-bottom: 1px solid #f2f2f2;
+    flex-flow: row nowrap;
+    display: flex;
+    position: relative;
+    padding: 5px 0;
+}
+
+.PostsListItem:last-child {
+    border-bottom: none;
+}
+
+.PostsListItem > .active {
+    background-color: #ff2f5a;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.PostsListItem > .title {
+    cursor: pointer;
+    margin: auto auto auto 20px;
+    flex: 1 1 0;
+    width: 0;
+}
+
+.PostsListItem > .title > .title-wrap {
+    display: inline-block;
+    max-width: 85%;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}

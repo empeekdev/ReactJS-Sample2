@@ -1,0 +1,16 @@
+.PanelGroup {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex: 1 1 0;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    .PanelGroup {
+        height: auto;
+        width: 100%;
+    }
+}

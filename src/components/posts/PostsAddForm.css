@@ -1,0 +1,12 @@
+.PostsAddForm {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.PostsAddForm > * {
+    margin-right: 10px;
+}
+
+.PostsAddForm > *:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,14 @@
+.Dairy {
+    display: flex;
+    font-family: Verdana, sans-serif;
+    flex-flow: row nowrap;
+    min-height: 100vh;
+    min-width: 500px;
+}
+
+@media (max-width: 500px) {
+    .Dairy {
+        flex-wrap: wrap;
+        height: auto;
+    }
+}

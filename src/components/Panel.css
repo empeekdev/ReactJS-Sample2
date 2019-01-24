@@ -1,0 +1,40 @@
+.Panel {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #727376;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 40%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.Panel > .title {
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 25px;
+    color: #616573;
+    margin-bottom: 10px;
+}
+
+.Panel > .body {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 0;
+    height: 0;
+}
+
+@media (max-width: 1000px) {
+    .Panel {
+        flex: 1 1 100%;
+    }
+
+    .Panel > .body {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .Panel > .body {
+        max-height: 100vh;
+        height: auto;
+    }
+}
